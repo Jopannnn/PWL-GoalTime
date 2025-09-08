@@ -44,3 +44,9 @@ Data yang tersedia
 - users — Data pengguna (nama, email, password)
 - Lapangan — Data lapangan (nama, lokasi, harga, deskripsi, rating)
 - Data Booking — Data pemesanan (id_user, id_Lapangan)
+
+## Instalansi
+### 1. Clone Repository
+```bash
+git clone https://github.com/Jopannnn/PWL-GoalTime.git
+cd PWL-GoalTime
