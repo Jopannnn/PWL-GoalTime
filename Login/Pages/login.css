@@ -36,7 +36,7 @@ body {
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* bikin form rata tengah */
+  justify-content: center;  
   background: #fff;
 }
 
@@ -92,14 +92,12 @@ p {
   margin-left: -20px;
 }
 
-/* Garis pemisah */
 hr {
   margin: 20px 0;
   border: none;
   border-top: 1px solid #ddd;
 }
 
-/* Form */
 form {
   display: flex;
   flex-direction: column;

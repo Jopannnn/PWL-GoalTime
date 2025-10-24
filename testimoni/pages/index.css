@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #FFFFFF;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(13, 71, 161);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    padding-right: 60px;
+}
+
+.logo{
+    height: 150px;
+    margin-right: auto;
+    margin-left: 60px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.tulisan-headerrr {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.tulisan-headerrr h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tulisan-headerrr h2 a:visited,
+.tulisan-headerrr h2 a:active {
+    color: white;
+}
+
+.tulisan-headerrr h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.tulisan-headerrr h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.tulisan-headerrr h2:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* TESTIMONI */
+.testimoni {
+    padding: 50px 0;
+}
+
+.testimoni h2 {
+    margin-bottom: 30px;
+}
+
+.grid-testimoni {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.kotak {
+    background-color: #0D47A1;
+    color: #fff;
+    padding: 25px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.kotak .profil {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.kotak .stars {
+    width: 20px;
+    margin: 2px ;
+}
+
+.kotak p {
+    font-size: 14px;
+}
+
+/* ATLET SECTION */
+.atlet {
+    padding: 60px 0;
+}
+
+.container-atlet {
+    background: #0D47A1;
+    padding: 35px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 30px;
+}
+
+.atlet-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.atlet-text {
+    flex: 1;
+}
+
+.btn-orange {
+    background: #FF6F00;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #0D47A1;
+    color: #fff;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    margin-bottom: 6px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+copyright {
+    margin-top: 30px;
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    background: #08306d;
+    border-radius: 0 0 30px 30px;
+}
+
+
