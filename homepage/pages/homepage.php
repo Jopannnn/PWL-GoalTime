@@ -45,35 +45,28 @@
 
     </div>
 
-    <div class="foto-3-alasan">
-        <img src="../asset/tanda-centang-removebg-preview.png" alt="" style="width: 240px; height: 240px;">
-        <img src="../asset/keunggulan-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
-        <img src="../asset/layout-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
+    <div class="alasan-wrapper">
+
+    <div class="alasan-item">
+        <img src="../asset/tanda-centang-removebg-preview.png" alt="">
+        <h1>Mudah dan Praktis di pakai</h1>
+        <p>Solusi booking lapangan futsal <br> lewat ponsel dan media elektronik <br>banda secara mudah, praktis, dan kapanpun <br>dimanapun</p>
     </div>
 
-
-    <div class="container-alasan">
-
-        <div class="alasan-1" style="text-align: center;">
-           
-            <h1 style="font-size: 30px;">Mudah dan Praktis di pakai</h1>
-            <p style="font-size: 20px;">Solusi booking lapangan futsal <br> lewat ponsel dan media elektronik <br>banda secara mudah, praktis, dan kapanpun <br>dimanapun</p>
-
-        </div>
-
-        <div class="alasan-2">
-            <h1 style="font-size: 30px;">Banyak Pilihan Lapangan</h1>
-            <p style="font-size: 20px;">Tersedia banyak varian lapangan yang <br>beragam dan tersedia di semua penjuru Indonesia</p>
-
-        </div>
-
-        <div class="alasan-3" style="text-align: center;">
-
-            <h1 style="font-size: 30px;">Cek Detail Tanpa Ke Lokasi</h1>
-            <p style="font-size: 20px;"> Dapat Mengecek Detail Lapangan Secara <br>Online Tanpa Harus Pergi Ke Lokasi</p>
-
-        </div>
+    <div class="alasan-item">
+        <img src="../asset/keunggulan-lapangan.jpg" alt="">
+        <h1>Banyak Pilihan Lapangan</h1>
+        <p>Tersedia banyak varian lapangan yang <br>beragam dan tersedia di semua penjuru Indonesia</p>
     </div>
+
+    <div class="alasan-item">
+        <img src="../asset/layout-lapangan.jpg" alt="">
+        <h1>Cek Detail Tanpa Ke Lokasi</h1>
+        <p>Dapat Mengecek Detail Lapangan Secara <br>Online Tanpa Harus Pergi Ke Lokasi</p>
+    </div>
+
+</div>
+
     
     <h1 style="font-size: 50px; margin-left: 125px;margin-top: 150px;"><u>Top Lapangan Futsal</u></h1>
 

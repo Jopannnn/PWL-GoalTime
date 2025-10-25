@@ -137,48 +137,31 @@ body{
 
 }
 
-.foto-3-alasan{
-
+.alasan-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 380px;
-    margin-top: 150px;
-   
-}
-
-.alasan-1{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
-}
-
-.alasan-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-}
-
-
-.alasan-3{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  
-}
-
-
-.container-alasan{
-    display: flex;
-    gap: 250px;
+    align-items: flex-start;
+    gap: 80px;
     text-align: center;
-    margin-left: 142px;
+    margin-top: 120px;
+    flex-wrap: wrap;
 }
 
+.alasan-item img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
 
+.alasan-item h1 {
+    font-size: 28px;
+    margin-top: 20px;
+}
 
+.alasan-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
 
 .foto-lapangan-futsal{
     margin-top: 50px;
