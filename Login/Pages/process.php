@@ -24,7 +24,7 @@ if (isset($_POST['login'])) {
             $_SESSION['email'] = $user['email'];
             $_SESSION['username'] = $user['username'];
 
-            header('Location: ../../homepage/Pages/homepage.php');
+            header('Location: ../../homepage/pages/homepage.php');
             exit;
         } else {
             echo "
