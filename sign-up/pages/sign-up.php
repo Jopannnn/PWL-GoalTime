@@ -10,13 +10,13 @@
   <div class="container">
     <!-- Bagian kiri: gambar kiri -->
     <div class="left">
-      <img src="../Sign Up asset/Gambar Kiri.png" alt="">
+      <img src="../asset/Gambar Kiri.png" alt="">
     </div>
 
     <!-- Bagian kanan: form login -->
     <div class="right">
       <div class="logo">
-        <img src="../Sign Up asset/Logo.png" alt="logo">
+        <img src="../asset/Logo.png" alt="logo">
       </div>
 
       <h1>Create Account</h1>
@@ -25,13 +25,13 @@
       <div class="social-login">
         <form action="google.php" method="POST" style="width: 100%;">
           <button class="google">
-            <img src="../Sign Up asset/Google.png" alt="Google"> Google
+            <img src="../asset/Google.png" alt="Google"> Google
           </button>
         </form>
 
         <form action="facebook.php" method="POST" style="width: 100%;">
           <button class="facebook">
-            <img src="../Sign Up asset/Facebook.png" alt="Facebook"> Facebook
+            <img src="../asset/Facebook.png" alt="Facebook"> Facebook
           </button>
         </form>
       </div>
