@@ -12,31 +12,26 @@
         
         <div class="dalam-header"> 
             
-            <img src="Homepage-Asset/LOGO-goaltime.png" alt="" class="logo">
+            <img src="../asset/LOGO-goaltime.png" alt="" class="logo">
 
             <div class="tulisan-header">
-                <h2>Home</h2>
-                <h2>Discover</h2>
-                <h2>Testimoni</h1>
-                <h2>About us</h2>
+               <h2><a href="../../homepage/Pages/homepage.php">Home</a></h2>
+               <h2><a href="../../discover/pages/discover.php">Discover</a></h2>
+               <h2><a href="../../testimoni/pages/index.php">Testimoni</a></h2>
+               <h2><a href="../../about-us/pages/about-us.php">About Us</a></h2>
             </div>
-            
-     
-        </a>
-
         </div>
         
     </Header>
 
     <div class="foto-utama-dan-tombol">
-        <img src="Homepage-Asset/foto-futsal-1.jpg" alt="" class="foto-utama">
+        <img src="../asset/foto-futsal-1.jpg" alt="" class="foto-utama">
        
         
         <div class="tombol-foto-utama">
-         
-            <h1>Discover</h1>
-
+            <a href="../../discover/pages/discover.php">Discover</a>
         </div>
+
 
     </div>
 
@@ -47,9 +42,9 @@
     </div>
 
     <div class="foto-3-alasan">
-        <img src="Homepage-Asset/tanda-centang-removebg-preview.png" alt="" style="width: 240px; height: 240px;">
-        <img src="Homepage-Asset/keunggulan-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
-        <img src="Homepage-Asset/layout-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
+        <img src="../asset/tanda-centang-removebg-preview.png" alt="" style="width: 240px; height: 240px;">
+        <img src="../asset/keunggulan-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
+        <img src="../asset/layout-lapangan.jpg" alt="" style="width: 240px; height: 240px;">
     </div>
 
 
@@ -84,12 +79,12 @@
             
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/BIDADARI FUTSAL.jpeg.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/BIDADARI FUTSAL.jpeg.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">Bidadari Futsal</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.88</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Jakarta Timur</p>
@@ -114,12 +109,12 @@
 
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/arena futsal sbn.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/arena futsal sbn.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">Arena Futsal SBN</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.75</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Pontianak</p>
@@ -145,12 +140,12 @@
 
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/CENTRO TEBETAM.jpeg.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/CENTRO TEBETAM.jpeg.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">Centro Tebetram</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.90</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Jakarta Selatan</p>
@@ -179,12 +174,12 @@
             
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/gator futsal arena.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/gator futsal arena.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">Gator Arena Futsal</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.79</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Jakarta Utara</p>
@@ -209,12 +204,12 @@
 
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/JS FUTSAL.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/JS FUTSAL.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">JS Futsal</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.98</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Bogor</p>
@@ -241,12 +236,12 @@
 
             <div class="lapangan-1">
 
-                        <img src="Homepage-Asset/TEN SOCCER PONDOK INDAH.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+                        <img src="../asset/TEN SOCCER PONDOK INDAH.jpg" alt="" style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
 
                         <h1 style="margin-left: 20px; font-size: 38px;">Ten Soccer Arena</h1>
 
                         <div class="judul-baris-1">
-                            <img src="Homepage-Asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
+                            <img src="../asset/bintang-removebg-preview.png" alt=""; style="width: 20px; height: 20px;">
                             <p>4.88</p>
                             <div style="color: rgb(255, 111, 0); height: 6px; width: 6px; border-radius: 100%; background-color: rgb(255, 111, 0);"></div>
                             <p>Kota Denpasar</p>
@@ -277,7 +272,7 @@
       
       <div class="footer-section footer-about">
         <div class="logo-aboutus">
-        <img src="Homepage-Asset/LOGO-goaltime.png" alt="GoalTime Logo" class="footer-logo" style="margin-top: -38px;">
+        <img src="../asset/LOGO-goaltime.png" alt="GoalTime Logo" class="footer-logo" style="margin-top: -38px;">
         <p style="margin-top: -51px;">
           Platform reservasi futsal secara online untuk yang <br>memudahkan Anda 
           dalam memesan lapangan <br> dengan mudah, cepat, dan praktis

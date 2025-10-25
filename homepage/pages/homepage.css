@@ -26,6 +26,44 @@ body{
     padding-right: 60px;
 }
 
+.tulisan-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.tulisan-header h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tulisan-header h2 a:visited,
+.tulisan-header h2 a:active {
+    color: white;
+}
+
+.tulisan-header h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.tulisan-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.tulisan-header h2:hover::after {
+    width: 100%;
+}
+
 .tombol-login{
     background-color: rgb(255, 111, 0);
     color: white;
@@ -70,23 +108,27 @@ body{
     
 }
 
-
-.tombol-foto-utama{
+.tombol-foto-utama {
+    position: absolute;
     margin-left: 185px;
-    margin-top: -480px;
-    background-color: rgb(255, 111, 0);
+    margin-top: -440px;
+}
+
+.tombol-foto-utama a {
+    background-color: #FF6F00;
     color: white;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
     text-decoration: none;
-    position:absolute;
-    font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 150px;
-    padding-right: 150px;
- 
-     
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 35px 170px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.tombol-foto-utama a:hover {
+    background-color: rgb(156, 86, 0);
 }
 
 .alasan-gunakan-goaltime{
@@ -195,24 +237,32 @@ body{
     font-size: 21px;
 }
 
-.tombol-pesan{
-    background-color: rgb(255, 111, 0);
+.tombol-pesan {
+    background-color: #FF6F00;
     color: white;
-    border: none;
     border-radius: 40px;
-    font-weight: bold;
-    text-decoration: none;
-    height: 60px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
     width: 380px;
-    
+    height: 60px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
 }
+
+.tombol-pesan:hover {
+    background-color: rgb(156, 86, 0);
+}
+
+.tombol-pesan h1 {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    pointer-events: none; /* supaya klik tetap ke tombol, bukan ke h1 */
+}
+
 
 .bagian-tombol-pesan{
     margin-top: -10px;
