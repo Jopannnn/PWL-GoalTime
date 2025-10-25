@@ -1,0 +1,332 @@
+body,
+header {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(225, 225, 225);
+}
+
+.header {
+  background-color: rgb(13, 71, 161);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.dalam-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  padding-right: 60px;
+}
+
+.tulisan-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.tulisan-header h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tulisan-header h2 a:visited,
+.tulisan-header h2 a:active {
+    color: white;
+}
+
+.tulisan-header h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.tulisan-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.tulisan-header h2:hover::after {
+    width: 100%;
+}
+
+.logo {
+  height: 150px;
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.foto-utama {
+  width: 100%;
+}
+
+.search-container {
+  position: relative;
+  width: 440px;
+  height: 80px;
+  margin-left: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px 10px 35px; 
+  border: 2px solid #000;
+  border-radius: 50px; 
+  font-size: 21px;
+  outline: none;
+  background-color: rgb(225, 225, 225);
+  padding-left: 100px; 
+}
+
+.search-container input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+.search-container img {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.pilih-kota {
+  width: 440px;
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+.dalam-pilih-kota {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 100%;
+  gap: 20px;
+}
+
+.cari-venue {
+  border: none;
+  border-radius: 25px;
+  padding: 30px 70px;
+  background-color: rgb(255, 111, 0);
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.cari-venue:hover {
+  background-color: rgb(156, 86, 0);
+}
+
+.tombol-cari-lapangan {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 40px;
+  margin-left: 90px;
+  gap: 80px;
+}
+
+.foto-lapangan-futsal {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.baris-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.lapangan-1 {
+  background-color: white;
+  width: 450px;
+  border-radius: 40px;
+  box-shadow: 10px 12px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 75px;
+}
+
+.judul-baris-1 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.judul-baris-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+  margin-top: -20px;
+  font-size: 21px;
+}
+
+.tombol-pesan {
+  background-color: rgb(255, 111, 0);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+}
+
+.tombol-pesan:hover {
+  background-color: rgb(156, 86, 0);
+}
+
+.bagian-tombol-pesan {
+  margin-top: -10px;
+  padding-bottom: 30px;
+}
+
+.tombol-load-more {
+  background-color: rgb(255, 111, 0);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  height: 50px;        /* lebih kecil dari tombol Pesan */
+  width: 250px;        /* lebih kecil juga */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 120px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -120px;
+}
+
+.tombol-load-more:hover {
+  background-color: rgb(156, 86, 0);
+}
+
+
+.footer {
+  background-color: #0a4da2;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 230px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.footer-about {
+  max-width: 280px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9900;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  color: #ff9900;
+}
+
+.footer-links span {
+  margin: 0 5px;
+}
+
+.logo-aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  margin-left: -150px;
+}
