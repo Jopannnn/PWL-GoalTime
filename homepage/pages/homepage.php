@@ -21,9 +21,6 @@
                <h2><a href="../../about-us/pages/about-us.php">About Us</a></h2>
             </div>
             
-     
-        </a>
-
         </div>
         
     </Header>
