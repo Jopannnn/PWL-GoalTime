@@ -50,9 +50,37 @@
                 <img src="../asset/location.png" alt=""
                     style="width: 40px; height: 40px; margin-left: 20px; margin-right: 10px;">
                 <p style="font-size: 21px; font-weight: 600;">Pilih kota</p>
+                <span class="arrow"></span>
             </div>
-        </div>
 
+            <ul class="pilihan-kota" id="dropdownKota">
+            <li>Balikpapan</li>
+            <li>Banda Aceh</li>
+            <li>Bandar Lampung</li>
+            <li>Bandung</li>
+            <li>Banjarbaru</li>
+            <li>Banjarmasin</li>
+            <li>Batam</li>
+            <li>Bogor</li>
+            <li>Denpasar</li>
+            <li>Depok</li>
+            <li>Jakarta</li>
+            <li>Jambi</li>
+            <li>Makassar</li>
+            <li>Malang</li>
+            <li>Manado</li>
+            <li>Medan</li>
+            <li>Pekanbaru</li>
+            <li>Palembang</li>
+            <li>Pontianak</li>
+            <li>Samarinda</li>
+            <li>Semarang</li>
+            <li>Surabaya</li>
+            <li>Tangerang</li>
+            <li>Yogyakarta</li>
+        </ul>
+
+        </div>
 
         <button class="cari-venue">
             Cari Venue
@@ -406,9 +434,9 @@
             <div class="footer-section">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="../../about-us/pages/about-us.php">Tentang Kami</a></li>
                     <li><a href="#">Layanan</a></li>
-                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="../../testimoni/pages/index.php">Testimoni</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
@@ -446,10 +474,31 @@
         </div>
     </footer>
 
+    <script>
+        const pilihKota = document.querySelector(".pilih-kota");
+        const dropdown = document.getElementById("dropdownKota");
+        const teksKota = document.querySelector(".dalam-pilih-kota p");
+        const arrow = document.querySelector(".arrow");
 
+        pilihKota.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle("show");
+        arrow.classList.toggle("rotate");
+        });
 
+        dropdown.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", () => {
+            teksKota.textContent = item.textContent;
+            dropdown.classList.remove("show");
+            arrow.classList.remove("rotate");
+        });
+        });
 
-
+        document.addEventListener("click", () => {
+        dropdown.classList.remove("show");
+        arrow.classList.remove("rotate");
+        });
+</script>
 
 </body>
 

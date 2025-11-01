@@ -62,11 +62,19 @@ body {
 }
 
 .logo {
+  width: 250px;
+  transition: .25s ease;
+  cursor: pointer;
   height: 150px;
   margin-right: auto;
   margin-left: 60px;
   margin-top: -30px;
   margin-bottom: -30px;
+}
+
+.logo:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.15));
 }
 
 .foto-utama {
@@ -108,6 +116,40 @@ body {
   height: 80px;
   border: 2px solid #000;
   border-radius: 50px;
+  position: relative;
+  z-index: 9999; 
+  cursor: pointer; 
+  transition: .25s ease;
+}
+
+.pilih-kota:hover {
+  box-shadow: 0 10px 18px rgba(0,0,0,.18);
+  transform: translateY(-3px);
+}
+
+.arrow {
+  margin-left: auto;
+  margin-right: 25px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(45deg);
+  transition: .25s;
+}
+
+.arrow.rotate {
+  transform: rotate(-135deg);
+}
+
+.pilihan-kota {
+  transform-origin: top;
+  transform: translateY(-10px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.pilihan-kota.show {
+  transform: translateY(0);
 }
 
 .dalam-pilih-kota {
@@ -116,19 +158,60 @@ body {
   padding-left: 30px;
   height: 100%;
   gap: 20px;
+  pointer-events: none;
+}
+
+.pilihan-kota {
+  width: 440px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 6px;
+  position: absolute;
+  display: none;
+  z-index: 2000;
+  max-height: 260px;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.pilihan-kota.show {
+  display: block;
+  opacity: 1;
+}
+
+.pilihan-kota li {
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .2s;
+}
+
+.pilihan-kota li:hover {
+  background: rgb(255, 111, 0);
+  color: white;
 }
 
 .cari-venue {
-  border: none;
-  border-radius: 25px;
-  padding: 30px 70px;
-  background-color: rgb(255, 111, 0);
+ background-color: rgb(255, 111, 0);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 50px;
   font-size: 21px;
   font-weight: 600;
+  padding: 25px 60px;
+  cursor: pointer;
+  transition: .25s ease; 
 }
 
 .cari-venue:hover {
-  background-color: rgb(156, 86, 0);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  border: 2px solid rgba(255, 111, 0, .6);
+  background-color: rgb(255, 124, 22);
 }
 
 .tombol-cari-lapangan {
@@ -138,6 +221,21 @@ body {
   margin-top: 40px;
   margin-left: 90px;
   gap: 80px;
+}
+
+.search-container {
+  position: relative;
+  width: 440px;
+  height: 80px;
+  margin-left: 20px;
+  transition: .25s ease; 
+  border: 2px solid transparent; 
+  border-radius: 50px;
+}
+
+.search-container:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,.18); 
 }
 
 .foto-lapangan-futsal {
@@ -329,4 +427,51 @@ body {
   align-items: start;
   text-align: left;
   margin-left: -150px;
+}
+
+.lapangan-1 {
+    background-color: white;
+    width: 450px;
+    border-radius: 40px;
+    box-shadow: 10px 12px 0 rgba(0, 0, 0, 0.1);
+    transition: .35s ease;
+    cursor: pointer;
+    overflow: hidden; 
+    position: relative;
+}
+
+.lapangan-1:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.lapangan-1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 2px;
+    background: linear-gradient(45deg, #9e9e9e, #bdbdbd, #e0e0e0, #9e9e9e);
+    background-size: 300%;
+    z-index: -1;
+    opacity: 0;
+    transition: .35s ease;
+}
+
+.lapangan-1:hover::after {
+    opacity: 1;
+    animation: glowRun 2s linear infinite;
+}
+
+@keyframes glowRun {
+    0% { background-position: 0% }
+    100% { background-position: 300% }
+}
+
+.lapangan-1 img {
+    transition: .4s ease;
+}
+
+.lapangan-1:hover img {
+    transform: scale(1.07);
 }

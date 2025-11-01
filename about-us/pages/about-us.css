@@ -64,11 +64,19 @@ body{
 }
 
 .logo{
-    height: 150px;
-    margin-right: auto;
-    margin-left: 60px;
-    margin-top: -30px;
-    margin-bottom: -30px;
+  width: 250px;
+  transition: .25s ease;
+  cursor: pointer;
+  height: 150px;
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.logo:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.15));
 }
 
 .foto-utama{

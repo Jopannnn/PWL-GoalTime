@@ -98,9 +98,9 @@
       <div class="footer-section">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="../../about-us/pages/about-us.php">Tentang Kami</a></li>
           <li><a href="#">Layanan</a></li>
-          <li><a href="#">Testimoni</a></li>
+          <li><a href="../../testimoni/pages/index.php">Testimoni</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
