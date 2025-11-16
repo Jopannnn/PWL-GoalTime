@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #e1e1e1;
+  color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: rgb(13, 71, 161);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  padding-right: 60px;
+}
+
+.logo {
+  height: 150px;
+  margin-right: auto;
+  margin-left: 60px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.tulisan-headerrr {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.tulisan-headerrr h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.tulisan-headerrr h2 a:visited,
+.tulisan-headerrr h2 a:active {
+  color: white;
+}
+
+.tulisan-headerrr h2 {
+  position: relative;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.tulisan-headerrr h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.tulisan-headerrr h2:hover::after {
+  width: 100%;
+}
+
+.container-foto-utama-description {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.foto-utama-description {
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.nama-lapangan-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-lokasi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.lokasi-venue button {
+  background-color: rgb(255, 111, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding-right: 370px;
+}
+
+.lokasi-venue button:hover {
+  background-color: rgb(204, 89, 0);
+}
+
+.tombol-lokasi-venue {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bagian-kiri-description {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-left: 190px;
+}
+
+.bagian-kanan-description {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-right: 190px;
+}
+
+.aturan ol {
+  margin-left: 30px;
+}
+
+.bagian-atas {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  border-radius: 50px;
+  width: 700px;
+  height: 300px;
+  padding: 25px 70px;
+  padding-top: 50px;
+  gap: 40px;
+}
+
+.booking button {
+  background-color: rgb(255, 111, 0);
+  color: white;
+  border: none;
+  padding: 15px 200px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.booking button:hover {
+  background-color: rgb(204, 89, 0);
+}
+
+.fasilitas {
+  background-color: #fefefe;
+  border-radius: 50px;
+  width: 700px;
+  padding: 25px 70px;
+}
+
+.fasilitas ul {
+  margin-left: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.baris-bawah {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.bagian-bawah {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 50px;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.container-list-lapangan img {
+  width: 550px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.Bagian-kanan-listlapangan {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Bagian-kanan-listlapangan button {
+  background-color: rgb(255, 111, 0);
+  color: white;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Bagian-kanan-listlapangan button:hover {
+  background-color: rgb(204, 89, 0);
+}
+
+.nama-spesifikasi {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #0a4da2;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 230px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.footer-about {
+  max-width: 280px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9900;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  color: #ff9900;
+}
+
+.footer-links span {
+  margin: 0 5px;
+}
+
+.logo-aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  margin-left: -150px;
+}
+
+.bagian-ourteam {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.list-ourteam {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kotak-ourteam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  margin-top: -55px;
+}

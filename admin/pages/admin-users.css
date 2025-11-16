@@ -150,6 +150,35 @@ body{
     background: #FF6F00;
     transform: translateX(45px);
 }
+
+.btn-buat-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FF6F00;
+    color: white;
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-top: 300px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+.btn-buat-user:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon-buat-user {
+    width: 22px;
+    height: 22px;
+}
 /* -------------------------------------------------- */
 
 
@@ -184,9 +213,80 @@ body{
 .user-card {
   display: flex;
   align-items: center;
+  justify-content: flex-start; 
   margin-bottom: 30px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #000;
+  position: relative; 
+}
+
+.user-actions-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  border-left: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.action-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.action-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-icon,
+.update-icon {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+}
+
+.delete-icon {
+  color: #E60000;
+}
+
+.update-icon {
+  color: #000;
+}
+
+.icon-wrapper:hover .delete-icon,
+.icon-wrapper:hover .update-icon {
+  visibility: visible;
+  opacity: 1;
 }
 
 .user-img {
@@ -219,6 +319,73 @@ hr {
   margin: 5px 0;
 }
 
+.user-actions-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  border-left: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.action-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.action-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-icon,
+.edit-icon,
+.delete-icon {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+}
+
+.update-icon { color: #000; }
+.edit-icon { color: #000; }
+.delete-icon { color: #E60000; }
+
+.icon-wrapper:hover .update-icon,
+.icon-wrapper:hover .edit-icon,
+.icon-wrapper:hover .delete-icon {
+  visibility: visible;
+  opacity: 1;
+}
+
 .nav-icons {
   display: flex;
   justify-content: flex-end;
@@ -243,4 +410,88 @@ hr {
 .nav-icons .icon:active {
   transform: scale(0.9);
   opacity: 0.7;
+}
+
+
+/* CREATE PAGE */
+.create-user-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.right-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 100px;
+}
+
+.right-form h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.right-form label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.right-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-buat {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-buat:hover {
+    background-color: #e66000;
+}
+
+@media (max-width: 900px) {
+    .create-user-container {
+        flex-direction: column;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .right-form {
+        padding: 40px 30px;
+    }
 }

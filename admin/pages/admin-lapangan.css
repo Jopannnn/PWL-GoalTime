@@ -1,0 +1,409 @@
+body, header{
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(225, 225, 225);
+}
+
+
+/*  Bagian Navbar */
+.header{
+    background-color: rgb(13, 71, 161);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    
+}
+
+.dalam-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    padding-right: 60px;
+}
+
+.tombol-login{
+    background-color: rgb(255, 111, 0);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+}
+
+.tulisan-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.tulisan-header h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tulisan-header h2 a:visited,
+.tulisan-header h2 a:active {
+    color: white;
+}
+
+.tulisan-header h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.tulisan-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.tulisan-header h2:hover::after {
+    width: 100%;
+}
+
+.logo{
+    height: 150px;
+    margin-right: auto;
+    margin-left: 60px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+/* -------------------------------------------------- */
+
+/* SIDEBAR */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jockey+One&display=swap');
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #154186;
+    padding: 30px 25px;
+    padding: 120px 25px 25px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.sidebar-title {
+    font-family: "Jacques Francois";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.sidebar-line {
+    width: 80%;
+    height: 3px;
+    background: white;
+    margin: 0 auto 35px auto;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #2A6CD4;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: "Jockey One", sans-serif;
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-decoration: none;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.menu:hover {
+    transform: translateX(8px);
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 22px;
+}
+
+.menu.active {
+    background: #FF6F00;
+    transform: translateX(45px);
+}
+/* -------------------------------------------------- */
+
+/* Konten utama */
+.main-content {
+  margin-left: 300px;
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lapangan-container {
+  background: white;
+  border-radius: 15px;
+  width: 1100px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.list-title {
+  font-size: 45px;
+  font-family: "Jacques Francois";
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.tabel-lapangan {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tabel-lapangan th {
+  background-color: #E1E1E1;
+  padding: 14px 0;
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.tabel-lapangan td {
+  padding: 12px 0;
+  border-bottom: 1px solid #bbb;
+  transition: background-color 0.3s ease;
+}
+
+.tabel-lapangan tr:hover td {
+  background-color: #b1b1b1;
+  color: white;
+  cursor: pointer;
+}
+
+.star {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.btn-buat-lapangan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FF6F00;
+    color: white;
+    text-decoration: none;
+    font-family: "Jockey One", sans-serif;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-top: 300px; 
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+.btn-buat-lapangan:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon-buat-lapangan {
+    width: 22px;
+    height: 22px;
+}
+
+.aksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.aksi a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 11px;
+    color: #333;
+    transition: 0.2s;
+}
+
+.aksi img {
+    width: 22px;
+    transition: transform 0.2s ease;
+}
+
+.aksi a:hover img {
+    transform: scale(1.2);
+}
+
+.aksi a.delete:hover span {
+    color: red;
+}
+
+.aksi a.update:hover span {
+    color: #000000;
+}
+
+/* ICON NAV */
+.nav-icons {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.nav-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-icons img {
+    width: 30px;
+}
+
+/* CREATE PAGE */
+.create-user-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.right-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 100px;
+}
+
+.right-form h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.right-form label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.right-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-buat {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-buat:hover {
+    background-color: #e66000;
+}
+
+@media (max-width: 900px) {
+    .create-user-container {
+        flex-direction: column;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .right-form {
+        padding: 40px 30px;
+    }
+}
+
+.aksi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.aksi a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.aksi img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.aksi a:hover img {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.aksi a.delete:hover img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(100%) saturate(7442%) hue-rotate(357deg) brightness(90%) contrast(120%);
+}
+
+.aksi a.update:hover img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(7%) saturate(1708%) hue-rotate(163deg) brightness(94%) contrast(97%);
+}
+

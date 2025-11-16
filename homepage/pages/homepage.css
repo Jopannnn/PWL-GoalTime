@@ -7,7 +7,10 @@ body{
     background-color: rgb(225, 225, 225);
 }
 
-
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
 
 .header{
     background-color: rgb(13, 71, 161);
@@ -15,7 +18,6 @@ body{
     top: 0;
     position: fixed;
     z-index: 9999;
-    
 }
 
 .logo {
@@ -42,19 +44,22 @@ body{
     padding-right: 60px;
 }
 
-.tombol-login{
-    background-color: rgb(255, 111, 0);
+.login-btn {
+    background-color: #FF6F00; 
     color: white;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+    padding: 6px 18px;
+    border-radius: 25px;
     cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    height: 50px;
-    width: 100px;
+    font-weight: 600;
+    font-size: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 160px;
+}
+
+.login-btn:hover {
+    background-color: #e55f00; 
+    transform: scale(1.05);
 }
 
 .tulisan-header {
@@ -97,15 +102,12 @@ body{
 
 .foto-utama{
     width: 100%;
-    
 }
 
 
 .foto-utama-dan-tombol{
     position: relative;
     margin-top:90px;
-    
-    
 }
 
 .tombol-foto-utama {
@@ -186,11 +188,10 @@ body{
 .foto-lapangan-futsal{
     margin-top: 50px;
     margin-bottom: 150px;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     gap: 70px;
-    
-    
 }
 
 
@@ -200,7 +201,6 @@ body{
     justify-content: center;
     flex-direction: row;
     gap: 50px;
-   
 }
 
 .lapangan-1{
@@ -209,7 +209,6 @@ body{
     border-radius: 40px;
     box-shadow: 10px 12px 0px rgba(0, 0, 0, 0.1);
     margin-right: 75px
-
 } 
 
 
@@ -283,7 +282,6 @@ body{
   flex: 1;
   min-width: 200px;
   margin: 10px;
-  
 }
 
 .footer-logo {
@@ -406,3 +404,34 @@ body{
 .lapangan-1:hover img {
     transform: scale(1.07);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5),
+                0 0 20px rgba(255, 111, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 111, 0, 0.8),
+                0 0 45px rgba(255, 111, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5),
+                0 0 20px rgba(255, 111, 0, 0.4);
+  }
+}
+
+.tombol-pesan {
+  animation: pulseGlow 2.8s ease-in-out infinite;
+}
+

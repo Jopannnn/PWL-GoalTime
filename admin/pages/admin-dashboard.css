@@ -1,0 +1,260 @@
+body, header{
+    margin: 0;
+    
+}
+
+body{
+    background-color: white;
+}
+
+
+/*  Bagian Navbar */
+.header{
+    background-color: rgb(13, 71, 161);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    
+}
+
+.dalam-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    padding-right: 60px;
+}
+
+.tombol-login{
+    background-color: rgb(255, 111, 0);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+}
+
+.tulisan-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.tulisan-header h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.tulisan-header h2 a:visited,
+.tulisan-header h2 a:active {
+    color: white;
+}
+
+.tulisan-header h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.tulisan-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.tulisan-header h2:hover::after {
+    width: 100%;
+}
+
+.logo{
+    height: 150px;
+    margin-right: auto;
+    margin-left: 60px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+/* -------------------------------------------------- */
+
+/* SIDEBAR */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jockey+One&display=swap');
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #154186;
+    padding: 30px 25px;
+    padding: 120px 25px 25px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.sidebar-title {
+    font-family: "Jacques Francois";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.sidebar-line {
+    width: 80%;
+    height: 3px;
+    background: white;
+    margin: 0 auto 35px auto;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #2A6CD4;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: "Jockey One", sans-serif;
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-decoration: none;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.menu:hover {
+    transform: translateX(8px);
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 22px;
+}
+
+.menu.active {
+    background: #FF6F00;
+    transform: translateX(45px);
+}
+/* -------------------------------------------------- */
+
+/* <!-- MAIN CONTENT --> */
+.dashboard-container{
+    margin-left:320px;
+    margin-top:120px;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    background:#fff;
+    min-height:100vh;
+    transition:0.3s ease-in-out;
+}
+
+.dashboard-content{
+    width:95%;
+    max-width:1300px;
+}
+
+.dash-title{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:35px;
+    color:#012a5e;
+}
+
+.stats-wrapper{
+    display:flex;
+    gap:28px;
+    margin-bottom:40px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:25px 30px;
+    border-radius:14px;
+    width:220px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+    transition:all .25s ease-in-out;
+    cursor:pointer;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px) scale(1.04);
+    box-shadow:0 10px 18px rgba(0,0,0,.18);
+}
+
+.stat-card p{
+    margin:0;
+    font-size:15px;
+    color:#005cc5;
+    font-weight:600;
+}
+
+.stat-card h2{
+    margin-top:8px;
+    font-size:42px;
+    font-weight:700;
+    color:#ff7a00;
+}
+
+.schedule-title{
+    font-size:24px;
+    margin-bottom:20px;
+    font-weight:600;
+    color:#012a5e;
+}
+
+.schedule-table{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    font-size:16px;
+}
+
+.schedule-table thead{
+    background:#bfeaff;
+    font-weight:bold;
+}
+
+.schedule-table th,
+.schedule-table td{
+    padding:18px 22px;
+    text-align:left;
+}
+
+.schedule-table tbody tr{
+    transition:0.25s ease;
+}
+
+.schedule-table tbody tr:hover{
+    background: #f0d775; 
+    transform:scale(1.01);
+    transition:0.25s ease;
+}
+
+.schedule-table tr{
+    border-bottom:1px solid #eee;
+}
+
+.status.booked{
+    color:#ff7a00;
+    font-weight:700;
+}

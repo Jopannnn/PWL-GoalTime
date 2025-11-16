@@ -240,10 +240,22 @@ body {
 
 .foto-lapangan-futsal {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 70px;
+  flex-wrap: wrap;    
+  justify-content: start; 
+  gap: 60px;
+  margin-left: 60px;
+}
+
+.lapangan-1 {
+    flex: 0 0 30%;
+}
+
+.foto-lapangan-futsal::after {
+   content:"";
+   display:block;
+   clear:both;
 }
 
 .baris-1 {
@@ -259,6 +271,7 @@ body {
   border-radius: 40px;
   box-shadow: 10px 12px 0px rgba(0, 0, 0, 0.1);
   margin-right: 75px;
+  flex: 0 0 450px;
 }
 
 .judul-baris-1 {
@@ -307,31 +320,43 @@ body {
   padding-bottom: 30px;
 }
 
-.tombol-load-more {
-  background-color: rgb(255, 111, 0);
-  color: white;
-  border: none;
-  border-radius: 40px;
-  font-weight: bold;
-  height: 50px;        /* lebih kecil dari tombol Pesan */
-  width: 250px;        /* lebih kecil juga */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 120px;
-  margin-bottom: 10px;
-  position: relative;
-  top: -120px;
+.tombol-pesan a {
+    color: white; 
+    text-decoration: none; 
+}
+.tombol-pesan a:hover {
+    color: white; 
+}
+.tombol-pesan a:visited {
+    color: white; 
 }
 
-.tombol-load-more:hover {
-  background-color: rgb(156, 86, 0);
+.tombol-pesan {
+  animation: pulseGlow 2.8s ease-in-out infinite;
 }
 
+.load-more-btn {
+    background-color: rgb(255, 111, 0);
+    color: white;
+    padding: 10px 55px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: -40px;
+    margin-right: 55px;
+    cursor: pointer;
+    transition: .25s ease; 
+}
+
+.load-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  border: 2px solid rgba(255, 111, 0, .6);
+  background-color: rgb(255, 124, 22);
+}
 
 .footer {
   background-color: #0a4da2;
@@ -475,3 +500,19 @@ body {
 .lapangan-1:hover img {
     transform: scale(1.07);
 }
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5),
+                0 0 20px rgba(255, 111, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 111, 0, 0.8),
+                0 0 45px rgba(255, 111, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.5),
+                0 0 20px rgba(255, 111, 0, 0.4);
+  }
+}
+

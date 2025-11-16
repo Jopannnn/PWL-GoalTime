@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -10,21 +9,21 @@ body {
   color: #000;
 }
 
-/* NAVBAR */
-.navbar {
-  background-color: rgb(13, 71, 161);
-  width: 100%;
-  top: 0;
-  position: fixed;
-  z-index: 9999;
+/* ===== NAVBAR =====*/
+.header{
+    background-color: rgb(13, 71, 161);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
 }
 
-.container-nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  color: white;
-  padding-right: 60px;
+.dalam-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    padding-right: 60px;
 }
 
 .logo {
@@ -41,50 +40,49 @@ body {
   filter: drop-shadow(0 6px 10px rgba(0,0,0,.15));
 }
 
-.tulisan-headerrr {
+.tulisan-header {
   display: flex;
   flex-direction: row;
   gap: 50px;
   margin-right: 50px;
 }
 
-.tulisan-headerrr h2 a {
-  color: white;
-  text-decoration: none;
+.tulisan-header h2 a {
+    color: white;
+    text-decoration: none;
 }
 
-.tulisan-headerrr h2 a:visited,
-.tulisan-headerrr h2 a:active {
-  color: white;
+.tulisan-header h2 a:visited,
+.tulisan-header h2 a:active {
+    color: white;
 }
 
-.tulisan-headerrr h2 {
-  position: relative;
-  padding-bottom: 3px;
-  cursor: pointer;
+.tulisan-header h2 {
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
 }
 
-.tulisan-headerrr h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: 0.3s ease-in-out;
+.tulisan-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
 }
 
-.tulisan-headerrr h2:hover::after {
-  width: 100%;
+.tulisan-header h2:hover::after {
+    width: 100%;
 }
 
-/* HERO */
+/* ===== HERO =====*/
 .hero img {
   width: 100%;
 }
 
-/* TESTIMONI */
 .testimoni {
   padding: 50px 0;
 }
@@ -94,26 +92,29 @@ body {
 }
 
 .testimoni-anda {
-  text-align: start;
+  text-align: center;
   font-size: 70px;
   margin-top: 120px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   font-weight: 700;
-  margin-left: 130px;
+  margin-left: 0;          
 }
 
 .grid-testimoni {
-  display: grid;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 80px;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
 }
 
 .baris-kotak {
   display: flex;
-  flex-direction: row;
-  gap: 100px;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .kotak {
@@ -180,8 +181,6 @@ body {
   transition: .3s ease;
 }
 
-
-/* ATLET SECTION */
 .atlet {
   padding: 60px 0;
 }
@@ -248,7 +247,7 @@ body {
   justify-content: end;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 .footer {
   background-color: #0a4da2;
   color: white;
