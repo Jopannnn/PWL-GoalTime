@@ -1,112 +1,155 @@
 # 🥅 GoalTime  
 
-Website **GoalTime** adalah aplikasi reservasi lapangan futsal online yang **mudah, praktis, dan tersedia banyak pilihan lapangan di seluruh Indonesia**.  
+**GoalTime** adalah aplikasi reservasi lapangan futsal online yang memudahkan pemain futsal dalam mencari, memilih, dan memesan lapangan dengan cepat, praktis, dan akurat. Aplikasi ini dirancang untuk membantu manajemen penyewaan lapangan dan memberikan pengalaman pemesanan yang modern tanpa perlu datang langsung ke lokasi.
 
 ---
 
-## 📦 Features
-- Registrasi & login pengguna  
-- Reservasi online yang mudah dan praktis  
-- Informasi lapangan yang lengkap & jelas  
-- Testimoni dari atlet profesional  
-- Lokasi lapangan yang akurat  
-- Foto lapangan yang jelas  
-- Berbagai metode pembayaran tersedia  
+## 🎯 Tujuan Aplikasi
+- Mempermudah pengguna dalam menemukan lapangan futsal terdekat
+- Menghemat waktu proses pemesanan
+- Meminimalisir double booking
+- Mendukung digitalisasi manajemen penyewaan lapangan futsal
 
 ---
 
-## 🛠️ Teknologi yang digunakan
+## 📦 Fitur Utama
+- Registrasi & Login pengguna  
+- Pencarian dan pemilihan lapangan futsal
+- Reservasi lapangan berbasis tanggal dan jam
+- Informasi lapangan lengkap (foto, lokasi, harga, rating)
+- Testimoni dan ulasan pengguna
+- Berbagai metode pembayaran
+- Konfirmasi pemesanan otomatis
+- Riwayat booking pengguna
+
+---
+
+## 🛠️ Teknologi yang Digunakan
 | Teknologi | Deskripsi |
 |-----------|-----------|
-| 🎨 Figma | Mendesain UI/UX |
-| 🌐 HTML | Struktur utama halaman web |
-| 🎨 CSS | Styling tampilan web |
-| ⚡ JavaScript | Interaksi dinamis & responsif |
-| 🖥️ PHP | Backend untuk memproses data & logika server |
-| 🗄️ MySQL | Database untuk menyimpan data pengguna, lapangan, & reservasi |
-| 🖥️ Laragon / XAMPP | Local server untuk menjalankan PHP & database |
+| 🎨 Figma | Desain UI/UX |
+| 🌐 HTML | Struktur halaman |
+| 🎨 CSS | Styling tampilan |
+| ⚡ JavaScript | Interaksi dinamis |
+| 🖥️ PHP | Backend & server processing |
+| 🗄️ MySQL | Database |
+| 🖥️ Laragon / XAMPP | Web server lokal |
 
 ---
 
 ## 🧑‍💻 Cara Penggunaan
-1. Buka halaman utama **GoalTime**  
-2. Registrasi akun atau login  
-3. Pilih lapangan futsal yang tersedia  
-4. Lakukan pembayaran  
-5. Konfirmasi reservasi  
+1. Buka website **GoalTime**
+2. Registrasi atau login akun pengguna
+3. Pilih lapangan yang tersedia dari menu Discover
+4. Pilih tanggal & waktu
+5. Lakukan pembayaran
+6. Sistem mengirimkan konfirmasi booking
 
 ---
 
-## 🏗️ Arsitektur Proyek
-
-### 🖼️ Frontend
-Halaman yang tersedia:
-- **Homepage** → Halaman utama / Landing Page  
-- **Discover** → Cari lapangan lebih banyak  
-- **Testimoni** → Review dari pengguna  
-- **About Us** → Informasi tentang website  
-- **Reservasi** → Formulir pendaftaran lapangan  
-- **Payment** → Proses transaksi pembayaran  
-- **Login** → Halaman login pengguna  
-- **Sign Up** → Pendaftaran akun  
-
-### 🗄️ Back End
-Data yang tersedia:
-- **Users** — Data pengguna (nama, email, password)  
-- **Lapangan** — Data lapangan (nama, lokasi, harga, deskripsi, rating)  
-- **Data Booking** — Data pemesanan (id_user, id_lapangan)  
+## 🔁 Alur Sistem (Flow)
+```
+User → Login/Signup → Pilih Lapangan → Pilih Jadwal → Pembayaran → Konfirmasi → Booking Tersimpan
+```
 
 ---
 
-## ⚙️ Instalasi
+## 🧱 Entitas & Struktur Database
 
-1. Clone Repository
-   ```bash
-   git clone https://github.com/Jopannnn/PWL-GoalTime.git
-   cd PWL-GoalTime 
-   
-2. Install dan Jalankan Server
-- Install Laragon atau XAMPP
-- Aktifkan Apache & MySQL
+### Entitas yang Digunakan
+| Entitas | Deskripsi |
+|---------|-----------|
+| **Users** | Data akun pengguna |
+| **Lapangan** | Informasi lapangan futsal |
+| **Booking** | Data pemesanan lapangan |
+| **Testimoni** | Ulasan & rating pengguna |
 
-3. Import Database
- - Buka phpMyAdmin di browser: http://localhost/phpmyadmin
- - Buat database baru, misalnya **web_futsal**
- - Pilih database tersebut, lalu masuk ke tab Import
-- Klik Choose File dan pilih file **web_futsal.sql** dari folder project
-- Klik Go untuk menjalankan import
+### Struktur Field Utama
+| Tabel | Field |
+|-------|--------|
+| **users** | id_user, username, email, password, foto |
+| **lapangan** | id_lapangan, name, rating, location, price, img |
+| **booking** | id_booking, lapangan_id, nama_lapangan, tanggal, waktu_mulai, waktu_selesai, harga, status, dibuat_pada |
+| **testimoni** | id_testimoni, user_name, user_city, komentar, rating, foto |
 
-4. Konfigurasi Database
-- **$host = "localhost"**;
-- **$user = "root"**;
-- **$pass = ""**;
-- **$db   = "web_futsal"**;
+---
 
-5. Jalankan Website
+## ⚙️ Instalasi & Setup Database
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/Jopannnn/PWL-GoalTime.git
+cd PWL-GoalTime
+```
+
+### 2. Install & Jalankan Server
+- Install **XAMPP / Laragon**
+- Aktifkan **Apache & MySQL**
+
+### 3. Import Database
+- Buka phpMyAdmin  
+  http://localhost/phpmyadmin
+- Buat database baru **web_futsal**
+- Import file `web_futsal.sql`
+
+### 4. Konfigurasi Database
+```php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "web_futsal";
+```
+
+### 5. Jalankan Website
+```
 http://localhost/PWL-GoalTime
+```
 
-## 🤝 Kontribusi ## 
-1. Clone repository ini
-2. Buat branch baru contohnya **(git checkout -b fitur-baru)**
-3. Commit perubahan contohnya ** (git commit -m "Tambah fitur baru")**
-4. Push ke branch **(git push origin fitur-baru)**
-5. Ajukan Pull Request
+---
 
-## 📜 Lisensi ## 
-Proyek ini dibuat untuk tujuan pembelajaran.
-Bebas digunakan & dikembangkan lebih lanjut. 
+## 🚀 Rencana Pengembangan (Future Improvement)
+- Integrasi pembayaran otomatis (QRIS / VA)
+- Notifikasi email / WhatsApp otomatis
+- Dashboard admin untuk manajemen lapangan
+- Multi-cabang penyedia lapangan
+- Integrasi Google Maps API
 
-## 👥 Tim Pengembang ##
-- Jovan Albert William ( Front End Developer)
-- Devon Austin Vintjhe ( Back End Developer)
-- Michelle Nathaliu ( UI/UX Designer )
+---
 
-## 📩 Hubungi Kami ##
-Jika Anda memiliki pertanyaan, saran, atau ingin berkolaborasi, jangan ragu untuk menghubungi kami: 
-- Jovan Albert William ( Front End ) => jov132009@gmail.com
-- Devon Austin Vintjhe ( Back End ) => devonaustin042@gmail.com
+## 🤝 Kontribusi
+```bash
+git checkout -b fitur-baru
+git commit -m "Tambah fitur baru"
+git push origin fitur-baru
+```
+Ajukan Pull Request
 
-## 🙌 Terima Kasih ##
-Terima kasih telah mengunjungi proyek GoalTime. Kami harap proyek ini bermanfaat, baik sebagai referensi pembelajaran maupun inspirasi untuk karya Anda berikutnya.
+---
 
-Selamat Berkarya dan memodifikasi website ini!
+## 📜 Lisensi
+Proyek ini dibuat untuk tujuan pembelajaran.  
+Bebas digunakan & dikembangkan lebih lanjut.
+
+---
+
+## 👥 Tim Pengembang
+| Nama | Peran |
+|-------|--------|
+| Jovan Albert William | Front End Developer |
+| Devon Austin Vintjhe | Back End Developer |
+| Michelle Nathaliu | UI/UX Designer |
+
+---
+
+## 📩 Kontak
+- Jovan — **jov132009@gmail.com**
+- Devon — **devonaustin042@gmail.com**
+
+---
+
+## 🙌 Terima Kasih
+Terima kasih telah mengunjungi proyek GoalTime.  
+Semoga bermanfaat dan menginspirasi untuk pengembangan selanjutnya.
+
+**Selamat Berkarya! ⚽🔥**
+
