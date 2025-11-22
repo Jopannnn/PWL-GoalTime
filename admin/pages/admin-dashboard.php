@@ -1,6 +1,14 @@
+<?php
+require_once '../../db-connect/koneksi.php';
+
+$query = mysqli_query($connection, "SELECT COUNT(*) AS total FROM lapangan");
+$data = mysqli_fetch_assoc($query);
+$total_lapangan = $data['total'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Dashboard</title>
@@ -48,7 +56,7 @@
             <h1 class="dash-title">DASHBOARD</h1>
 
             <div class="stats-wrapper">
-                <div class="stat-card"><p>Total Lapangan</p> <h2>12</h2></div>
+                <div class="stat-card"><p>Total Lapangan</p> <h2><?php echo $total_lapangan; ?></h2></div>
                 <div class="stat-card"><p>Lapangan Tersedia</p> <h2>9</h2></div>
                 <div class="stat-card"><p>Dalam Perbaikan</p> <h2>2</h2></div>
                 <div class="stat-card"><p>Sedang Disewa</p> <h2>1</h2></div>

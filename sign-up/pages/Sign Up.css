@@ -8,6 +8,13 @@
 body {
   height: 100vh;
   display: flex;
+  animation: fadeIn 0.8s ease-in-out;
+  overflow: hidden; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .container {
@@ -36,7 +43,7 @@ body {
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* bikin form rata tengah */
+  justify-content: center;  
   background: #fff;
 }
 
@@ -49,7 +56,7 @@ body {
 .logo img {
   width: 350px;
   margin-right: 50px;
-  margin-bottom: -100px;
+  margin-bottom: -75px;
   margin-left: 100px;
 }
 
@@ -85,6 +92,13 @@ p {
   justify-content: center;
   gap: 8px;
   font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.social-login button:hover {
+  transform: translateY(-3px);
+  border-color: #ff8000;
+  box-shadow: 0 4px 10px rgba(255, 128, 0, 0.3);
 }
 
 .social-login img {
@@ -92,14 +106,12 @@ p {
   margin-left: -20px;
 }
 
-/* Garis pemisah */
 hr {
   margin: 20px 0;
   border: none;
   border-top: 1px solid #ddd;
 }
 
-/* Form */
 form {
   display: flex;
   flex-direction: column;
@@ -118,6 +130,13 @@ input {
   border-radius: 6px;
   margin-bottom: 15px;
   margin-left: -20px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff8000;
+  box-shadow: 0 0 10px rgba(255, 128, 0, 0.5);
+  outline: none;
 }
 
 .forgot {
@@ -137,8 +156,11 @@ input {
   border-radius: 8px;
   cursor: pointer;
   margin-left: -20px;
+  transition: 0.3s ease;
 }
 
-.SignUp-btn:hover {
+.SignUp-btn {
   background: #e67300;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(255, 128, 0, 0.3);
 }

@@ -103,7 +103,10 @@ if (!$data) {
                     Mulai dari Rp <?php echo number_format($data['price'], 0, ',', '.'); ?> <br> per sesi
                 </h1>
 
-                <button class="tombol-booking">Booking</button>
+                <a href="../../payment/pages/payment.php?id=<?php echo $data['id']; ?>">
+                    <button class="tombol-booking">Booking</button>
+                </a>
+
 
             </div>
 

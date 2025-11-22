@@ -13,7 +13,6 @@
         <img src="../asset/bg-page.png" alt="Background" class="bg-image">
     </div>
 
-
     <!-- ================= POPUP ================= -->
     <div class="popup-overlay">
         <div class="popup-container">
@@ -25,12 +24,12 @@
 
             <!-- Text -->
             <h1 class="popup-title">Pembayaran<br>Sukses</h1>
-            <p class="popup-text">
-                Terima kasih, pembayaran Anda telah berhasil diproses.
-            </p>
+            <p class="popup-text">Terima kasih, pembayaran Anda telah berhasil diproses.</p>
 
             <!-- Tombol -->
-            <button class="popup-button">Kembali ke Beranda</button>
+            <button class="popup-button" onclick="window.location.href='../../homepage/pages/homepage.php'">
+                Kembali ke Beranda
+            </button>
 
         </div>
     </div>
