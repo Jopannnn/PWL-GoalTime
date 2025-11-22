@@ -24,12 +24,9 @@
     </header>
 
     <!-- FOTO UTAMA + TOMBOL -->
-    <div class="foto-utama-dan-tombol">
+    <div class="hero-container">
         <img src="../asset/foto-futsal-1.jpg" alt="" class="foto-utama">
-
-        <div class="tombol-foto-utama">
-            <a href="../../discover/pages/discover.php">Discover</a>
-        </div>
+        <a href="../../discover/pages/discover.php" class="btn-discover">Discover</a>
     </div>
 
     <!-- ALASAN -->
@@ -81,8 +78,7 @@
             <!-- CARD 1 -->
             <div class="lapangan-1">
                 <img src="../asset/BIDADARI-FUTSAL.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">Bidadari Futsal</h1>
 
                 <div class="judul-baris-1">
@@ -111,8 +107,7 @@
             <!-- CARD 2 -->
             <div class="lapangan-1">
                 <img src="../asset/arena-futsal-sbn.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">Arena Futsal SBN</h1>
 
                 <div class="judul-baris-1">
@@ -141,8 +136,7 @@
             <!-- CARD 3 -->
             <div class="lapangan-1">
                 <img src="../asset/CENTRO-TEBETAM.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">Centro Tebetram</h1>
 
                 <div class="judul-baris-1">
@@ -176,8 +170,7 @@
             <!-- CARD 4 -->
             <div class="lapangan-1">
                 <img src="../asset/gator-futsal-arena.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">Gator Arena Futsal</h1>
 
                 <div class="judul-baris-1">
@@ -206,8 +199,7 @@
             <!-- CARD 5 -->
             <div class="lapangan-1">
                 <img src="../asset/JS-FUTSAL.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">JS Futsal</h1>
 
                 <div class="judul-baris-1">
@@ -236,8 +228,7 @@
             <!-- CARD 6 -->
             <div class="lapangan-1">
                 <img src="../asset/TEN-SOCCER-PONDOK-INDAH.jpg" alt=""
-                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
-
+                    style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
                 <h1 style="margin-left: 20px; font-size: 38px;">Ten Soccer Arena</h1>
 
                 <div class="judul-baris-1">
@@ -261,8 +252,8 @@
                         </div>
                     </a>
                 </div>
-
             </div>
+
         </div>
 
     </div>
@@ -345,4 +336,3 @@
 </body>
 
 </html>
-

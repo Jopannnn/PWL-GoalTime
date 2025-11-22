@@ -8,6 +8,7 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
         <div class="dalam-header">
             <img src="../asset/LOGO-goaltime.png" alt="" class="logo">
@@ -21,13 +22,13 @@
         </div>
     </header>
 
-    <div class="foto-utama-dan-tombol">
+    <!-- HERO -->
+    <div class="hero-container">
         <img src="../asset/foto-futsal-1.jpg" alt="" class="foto-utama">
-        <div class="tombol-foto-utama">
-            <a href="../../discover/pages/discover.php">Discover</a>
-        </div>
+        <a href="../../discover/pages/discover.php" class="btn-discover">Discover</a>
     </div>
 
+    <!-- ALASAN -->
     <div class="alasan-gunakan-goaltime reveal">
         <h1>Mengapa Memakai GoalTime?</h1>
     </div>
@@ -37,8 +38,10 @@
             <img src="../asset/tanda-centang-removebg-preview.png" alt="">
             <h1>Mudah dan Praktis di pakai</h1>
             <p>
-                Solusi booking lapangan futsal <br> lewat ponsel dan media elektronik <br>
-                banda secara mudah, praktis, dan kapanpun <br> dimanapun
+                Solusi booking lapangan futsal <br>
+                lewat ponsel dan media elektronik <br>
+                banda secara mudah, praktis, dan kapanpun <br>
+                dimanapun
             </p>
         </div>
 
@@ -46,7 +49,8 @@
             <img src="../asset/keunggulan-lapangan.jpg" alt="">
             <h1>Banyak Pilihan Lapangan</h1>
             <p>
-                Tersedia banyak varian lapangan yang <br> beragam dan tersedia di semua penjuru Indonesia
+                Tersedia banyak varian lapangan yang <br>
+                beragam dan tersedia di semua penjuru Indonesia
             </p>
         </div>
 
@@ -54,19 +58,23 @@
             <img src="../asset/layout-lapangan.jpg" alt="">
             <h1>Cek Detail Tanpa Ke Lokasi</h1>
             <p>
-                Dapat Mengecek Detail Lapangan Secara <br> Online Tanpa Harus Pergi Ke Lokasi
+                Dapat Mengecek Detail Lapangan Secara <br>
+                Online Tanpa Harus Pergi Ke Lokasi
             </p>
         </div>
     </div>
 
-    <h1 style="font-size: 50px; margin-left: 125px; margin-top: 150px;"><u>Top Lapangan Futsal</u></h1>
+    <!-- TOP LAPANGAN -->
+    <h1 style="font-size: 50px; margin-left: 125px; margin-top: 150px;">
+        <u>Top Lapangan Futsal</u>
+    </h1>
 
     <div class="foto-lapangan-futsal">
 
-        <!-- Baris 1 -->
+        <!-- BARIS 1 -->
         <div class="baris-1 reveal">
 
-            <!-- Lapangan Card 1 -->
+            <!-- LAPANGAN CARD 1 -->
             <div class="lapangan-1">
                 <img src="../asset/BIDADARI-FUTSAL.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -95,7 +103,7 @@
                 </div>
             </div>
 
-            <!-- Lapangan Card 2 -->
+            <!-- LAPANGAN CARD 2 -->
             <div class="lapangan-1">
                 <img src="../asset/arena-futsal-sbn.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -124,7 +132,7 @@
                 </div>
             </div>
 
-            <!-- Lapangan Card 3 -->
+            <!-- LAPANGAN CARD 3 -->
             <div class="lapangan-1">
                 <img src="../asset/CENTRO-TEBETAM.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -155,10 +163,10 @@
 
         </div>
 
-        <!-- Baris 2 -->
+        <!-- BARIS 2 -->
         <div class="baris-1">
 
-            <!-- Lapangan Card 4 -->
+            <!-- LAPANGAN CARD 4 -->
             <div class="lapangan-1">
                 <img src="../asset/gator-futsal-arena.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -187,7 +195,7 @@
                 </div>
             </div>
 
-            <!-- Lapangan Card 5 -->
+            <!-- LAPANGAN CARD 5 -->
             <div class="lapangan-1">
                 <img src="../asset/JS-FUTSAL.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -216,7 +224,7 @@
                 </div>
             </div>
 
-            <!-- Lapangan Card 6 -->
+            <!-- LAPANGAN CARD 6 -->
             <div class="lapangan-1">
                 <img src="../asset/TEN-SOCCER-PONDOK-INDAH.jpg" alt=""
                     style="width: 450px; height: 250px; border-top-left-radius: 40px; border-top-right-radius: 40px;">
@@ -249,6 +257,7 @@
 
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer reveal">
         <div class="footer-container">
 
@@ -291,6 +300,7 @@
                     <li>📧 GoalTime@gmail.com</li>
                 </ul>
             </div>
+
         </div>
 
         <div class="footer-bottom">
@@ -303,6 +313,7 @@
         </div>
     </footer>
 
+    <!-- JS ANIMASI REVEAL -->
     <script>
         const reveals = document.querySelectorAll(".reveal");
         window.addEventListener("scroll", () => {
